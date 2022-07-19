@@ -1,0 +1,22 @@
+{
+    "name": "iggyvolz/httpserver",
+    "description": "HTTP server based on  jeremycw's httpserver.h (Linux only)",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-ffi": "*",
+        "psr/http-server-handler": "^1.0",
+        "nyholm/psr7": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "iggyvolz\\httpserver\\": "src/"
+        }
+    },
+    "suggest": {
+        "revolt/event-loop": "To use polling rather than blocking"
+    },
+    "require-dev": {
+        "revolt/event-loop": "^0.2.4"
+    }
+}
