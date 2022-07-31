@@ -12,7 +12,7 @@ class HttpServer
     private static ?FFI $ffi = null;
     public static function ffi(): FFI
     {
-        return self::$ffi ??= FFI::cdef(file_get_contents(__DIR__ . "/../lib/header.h"), __DIR__ . "/../lib/a.out");
+        return self::$ffi ??= FFI::cdef(file_get_contents(__DIR__ . "/../lib/header.h"), __DIR__ . "/../lib/httpserver.so");
     }
     private readonly CData $cdata;
 
