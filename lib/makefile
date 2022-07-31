@@ -1,2 +1,4 @@
-httpserver.so: httpserver.h
-	cc -x c -shared -fPIC - -o $@ < $<
+httpserver.so: httpserver.c
+	cc -shared -fPIC $< -o $@
+clean:
+	rm -f httpserver.so
